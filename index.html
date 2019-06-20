@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>Chat grupal</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap !-->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Bootstrap !-->
+
+  <link rel="stylesheet" href="chat.css">
+  <script type="text/javascript" src="chat.js"></script>
+
+</head>
+
+<body>
+  <div class="jumbotron text-center">
+    <h1>Encuesta Ingenierías </h1>
+    <p>Esta encuesta solo será aplicada a alumnos que hallan resibido su carta de terminación de estadía</p>
+  </div>
+  <div class="container-fluid ">
+    <div class="row content">
+      <div class="col-sm-2">
+      </div>
+      <div class="col-sm-8">
+        <div class="panel panel-default">
+          <div class="container">
+
+            <form>
+
+
+              <div class="form-group"><label for='Matrícula'>Matrícula</label><input type='text' class='form-control'
+                  id='Matrícula' placeholder='Matrícula'></div>
+              <div class="form-group"><label for='Nombres(s) '>Nombres(s) </label><input type='text'
+                  class='form-control' id='Nombres(s) ' placeholder='Nombres(s) '></div>
+              <div class="form-group"><label for='Apellido Materno'>Apellido Materno</label><input type='text'
+                  class='form-control' id='Apellido Materno' placeholder='Apellido Materno'></div>
+              <div class="form-group"><label for='Apellido Paterno'>Apellido Paterno</label><input type='text'
+                  class='form-control' id='Apellido Paterno' placeholder='Apellido Paterno'></div>
+
+              <fieldset class="form-group">
+                <div class="row">
+                  <legend class="col-form-label col-sm-4 pt-0">Sexo</legend>
+                  <div class="col-sm-10">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="Masculino" value="option1"
+                        checked>
+                      <label class="form-check-label" for="Masculino">
+                        Masculino
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="Femenino" value="option2">
+                      <label class="form-check-label" for="Femenino">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+
+
+              <div class="form-group"><label for='Número de teléfono celular'>Número de teléfono celular</label><input
+                  type='text' class='form-control' id='Número de teléfono celular'
+                  placeholder='Número de teléfono celular'></div>
+              <div class="form-group"><label for='Número telefónico de casa '>Número telefónico de casa </label><input
+                  type='text' class='form-control' id='Número telefónico de casa '
+                  placeholder='Número telefónico de casa '></div>
+              <div class="form-group"><label for='E-mail '>E-mail </label><input type='text' class='form-control'
+                  id='E-mail ' placeholder='E-mail '></div>
+              <div class="form-group"><label for='Fecha de aplicación de la presente encuesta (mes/año) '>Fecha de
+                  aplicación de la presente encuesta (mes/año) </label><input type='text' class='form-control'
+                  id='Fecha de aplicación de la presente encuesta (mes/año) '
+                  placeholder='Fecha de aplicación de la presente encuesta (mes/año) '></div>
+              <div class="form-group"><label for='Fecha de egreso (mes/año) '>Fecha de egreso (mes/año) </label><input
+                  type='text' class='form-control' id='Fecha de egreso (mes/año) '
+                  placeholder='Fecha de egreso (mes/año) '></div>
+              <div class="form-group"><label for='Lugar de Residencia (Ciudad, Estado)'>Lugar de Residencia (Ciudad,
+                  Estado)</label><input type='text' class='form-control' id='Lugar de Residencia (Ciudad, Estado)'
+                  placeholder='Lugar de Residencia (Ciudad, Estado)'></div>
+              <div class="form-group"><label for='Titulado'>Titulado</label><input type='text' class='form-control'
+                  id='Titulado' placeholder='Titulado'></div>    
+                                    
+                  <fieldset class='form-group'>
+                    <div class='row'>
+                      <legend class='col-form-label col-sm-4 pt-0'>1.- Calidad del personal docente</legend>
+                      <div class='col-sm-10'>
+                      <div class='form-check'>
+                        <input class='form-check-input' type='radio' name="gridRadios2" id='Muy Buena' value='Muy Buena'>
+                        <label class='form-check-label' for='Muy Buena'>Muy Buena</label>                     
+                    </div> 
+                      <div class='form-check'>
+                        <input class='form-check-input' type='radio' name="gridRadios2" id='Buena' value='Buena'>
+                        <label class='form-check-label' for='Buena'>Buena</label> 
+                      </div>
+                      <div class='form-check'>
+                        <input class='form-check-input' type='radio' name="gridRadios2" id='Regular' value='Regular'>
+                        <label class='form-check-label' for='Regular'>Regular</label>
+                      </div>
+                      <div class='form-check'>
+                        <input class='form-check-input' type='radio' name="gridRadios2" id='Mala' value='Mala'>
+                        <label class='form-check-label' for='Mala'>Mala</label>
+                       </div>
+                      </div>
+                    </div>
+                  </fieldset>
+
+                  <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>2.- Énfasis que se le daba a las estrategias de aprendizaje basada en problemas, aprendizaje basado en proyectos y estudio de casos</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios3' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios3' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios3' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios3' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>3.- Enseñanza de las Ciencias Básicas (Física, Matemáticas, Química o Biología)</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios4' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios4' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios4' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios4' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>4.- Enseñanza del Idioma Inglés</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios5' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios5' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios5' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios5' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>5.- Enseñanza de asignaturas técnicas específicas de formación profesional</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios6' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios6' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios6' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios6' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>6.- Desarrollo de habilidad de comunicación oral y escrita</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios7' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios7' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios7' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios7' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>7.- Desarrollo de habilidades para trabajar en equipo</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios8' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios8' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios8' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios8' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>8.- Desarrollo de actitudes y valores</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios9' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios9' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios9' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios9' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>9.- Experiencia obtenida a través de la Estadía</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios10' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios10' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios10' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios10' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>10.- Plan de estudios</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios11' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios11' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios11' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios11' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>11.- Grado de satisfacción en cuanto a su formación en la UPPachuca</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios12' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios12' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios12' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios12' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>1.- Control Escolar</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios13' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios13' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios13' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios13' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>2.- Dirección del Programa Educativo</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios14' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios14' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios14' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios14' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>3.- Servicio Médico</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>4.- Actividades Extracurriculares de cultura y deportes</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios16' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios16' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios16' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios16' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>5.- Tutorías</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios17' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios17' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios17' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios17' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>6.- Laboratorios y Talleres</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios18' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios18' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios18' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios18' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>7.-Biblioteca</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios19' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios19' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios19' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios19' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>8.-  Instalaciones deportivas</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>9.- Aulas</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios21' id='Muy Buena' value='Muy Buena'><label class='form-check-label' for='Muy Buena'>Muy Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios21' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios21' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios21' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>10.-  Grado de satisfacción con los espacios de la UPPachuca</legend><div class='col-sm-10'>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios22' id='Muy Bueno' value='Muy Bueno'><label class='form-check-label' for='Muy Bueno'>Muy Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios22' id='Bueno' value='Bueno'><label class='form-check-label' for='Bueno'>Bueno</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios22' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                      <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios22' id='Malo' value='Malo'><label class='form-check-label' for='Malo'>Malo</label> </div></fieldset>
+
+                      <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>1.- Actividad a la que se dedica actualmente:</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios23' id='Estudia ' value='Estudia '><label class='form-check-label' for='Estudia '>Estudia </label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios23' id='Trabaja' value='Trabaja'><label class='form-check-label' for='Trabaja'>Trabaja</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios23' id='Estudia y Trabaja' value='Estudia y Trabaja'><label class='form-check-label' for='Estudia y Trabaja'>Estudia y Trabaja</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios23' id='No Estudia ni Trabaja' value='No Estudia ni Trabaja'><label class='form-check-label' for='No Estudia ni Trabaja'>No Estudia ni Trabaja</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>2.- Si estudia, indique si es:</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Especialidad' value='Especialidad'><label class='form-check-label' for='Especialidad'>Especialidad</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Maestria' value='Maestria'><label class='form-check-label' for='Maestria'>Maestria</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Doctorado' value='Doctorado'><label class='form-check-label' for='Doctorado'>Doctorado</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Idiomas' value='Idiomas'><label class='form-check-label' for='Idiomas'>Idiomas</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Certificación' value='Certificación'><label class='form-check-label' for='Certificación'>Certificación</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios24' id='Diplomado' value='Diplomado'><label class='form-check-label' for='Diplomado'>Diplomado</label> </div></fieldset>
+                          
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>3.- Tiempo transcurrido para obtener su primer empleo</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios25' id='Antes de egresar' value='Antes de egresar'><label class='form-check-label' for='Antes de egresar'>Antes de egresar</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios25' id='Durante el primer bimestre' value='Durante el primer bimestre'><label class='form-check-label' for='Durante el primer bimestre'>Durante el primer bimestre</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios25' id='Durante el segundo bimestre' value='Durante el segundo bimestre'><label class='form-check-label' for='Durante el segundo bimestre'>Durante el segundo bimestre</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios25' id='Durante el tercer bimestre' value='Durante el tercer bimestre'><label class='form-check-label' for='Durante el tercer bimestre'>Durante el tercer bimestre</label> </div></fieldset>
+                          
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>4.- Medio por el cual obtuvo el empleo</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios26' id='Bolsa de Trabajo de la Universidad' value='Bolsa de Trabajo de la Universidad'><label class='form-check-label' for='Bolsa de Trabajo de la Universidad'>Bolsa de Trabajo de la Universidad</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios26' id='Estadía Profesional' value='Estadía Profesional'><label class='form-check-label' for='Estadía Profesional'>Estadía Profesional</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios26' id='Otros' value='Otros'><label class='form-check-label' for='Otros'>Otros</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>5.- Elemento clave para su contratación</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios27' id='Titulo Profesional' value='Titulo Profesional'><label class='form-check-label' for='Titulo Profesional'>Titulo Profesional</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios27' id='Examen de selección' value='Examen de selección'><label class='form-check-label' for='Examen de selección'>Examen de selección</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios27' id='Idioma Extranjero' value='Idioma Extranjero'><label class='form-check-label' for='Idioma Extranjero'>Idioma Extranjero</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios27' id='Ninguno' value='Ninguno'><label class='form-check-label' for='Ninguno'>Ninguno</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios27' id='Otro' value='Otro'><label class='form-check-label' for='Otro'>Otro</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>6.- La empresa donde labora es propia</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios271' id='Si' value='Si'><label class='form-check-label' for='Si'>Si</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios271' id='No' value='No'><label class='form-check-label' for='No'>No</label> </div></fieldset>
+
+                          <div class="form-group"><label for= '8.- Giro o actividad principal de la empresa u organización donde labora'>8.- Giro o actividad principal de la empresa u organización donde labora</label><input type='text' class='form-control' id='8.- Giro o actividad principal de la empresa u organización donde labora' placeholder='8.- Giro o actividad principal de la empresa u organización donde labora'></div>
+                          
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>9.- Sector de la organización en la que labora</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios28' id='Público' value='Público'><label class='form-check-label' for='Público'>Público</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios28' id='Privado' value='Privado'><label class='form-check-label' for='Privado'>Privado</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios28' id='Paraestatal' value='Paraestatal'><label class='form-check-label' for='Paraestatal'>Paraestatal</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>10.- Tamaño de la empresa u organización</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios29' id='Microempresa (1-30 trabajadores)' value='Microempresa (1-30 trabajadores)'><label class='form-check-label' for='Microempresa (1-30 trabajadores)'>Microempresa (1-30 trabajadores)</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios29' id='Pequeña (31-100 trabajadores)' value='Pequeña (31-100 trabajadores)'><label class='form-check-label' for='Pequeña (31-100 trabajadores)'>Pequeña (31-100 trabajadores)</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios29' id='Mediana(101-500 trabjadores)' value='Mediana(101-500 trabjadores)'><label class='form-check-label' for='Mediana(101-500 trabjadores)'>Mediana(101-500 trabjadores)</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios29' id='Grande (mas de 500 trabajadores)' value='Grande (mas de 500 trabajadores)'><label class='form-check-label' for='Grande (mas de 500 trabajadores)'>Grande (mas de 500 trabajadores)</label> </div></fieldset>
+                          <div class="form-group"><label for= '11.- Nombre y ubicación de la empresa '>11.- Nombre y ubicación de la empresa </label><input type='text' class='form-control' id='11.- Nombre y ubicación de la empresa ' placeholder='11.- Nombre y ubicación de la empresa '></div></fieldset>
+                          
+                          <div class="form-group"><label for= '11.1.- Nombre del jefe inmediato'>11.1.- Nombre del jefe inmediato</label><input type='text' class='form-control' id='11.1.- Nombre del jefe inmediato' placeholder='11.1.- Nombre del jefe inmediato'></div>
+                          
+                          <div class="form-group"><label for= '11.2.- Correo del jefe inmediato'>11.2.- Correo del jefe inmediato</label><input type='text' class='form-control' id='11.2.- Correo del jefe inmediato' placeholder='11.2.- Correo del jefe inmediato'></div>
+                          
+                          <div class="form-group"><label for= '11.3.- Teléfono del jefe inmediato'>11.3.- Teléfono del jefe inmediato</label><input type='text' class='form-control' id='11.3.- Teléfono del jefe inmediato' placeholder='11.3.- Teléfono del jefe inmediato'></div>
+                          
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>12.- Ingreso mensual que percibe:</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios30' id='Menor $4,000' value='Menor $4,000'><label class='form-check-label' for='Menor $4,000'>Menor $4,000</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios30' id='Entre $4,000 y $8,000' value='Entre $4,000 y $8,000'><label class='form-check-label' for='Entre $4,000 y $8,000'>Entre $4,000 y $8,000</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios30' id='Entre $8,000 y $12,000' value='Entre $8,000 y $12,000'><label class='form-check-label' for='Entre $8,000 y $12,000'>Entre $8,000 y $12,000</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios30' id='Entre $12,000 y $16,000' value='Entre $12,000 y $16,000'><label class='form-check-label' for='Entre $12,000 y $16,000'>Entre $12,000 y $16,000</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios30' id='Mayor a $16,000' value='Mayor a $16,000'><label class='form-check-label' for='Mayor a $16,000'>Mayor a $16,000</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>13.- Nivel jerárquico en el trabajo:</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Operario' value='Operario'><label class='form-check-label' for='Operario'>Operario</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Técnico General' value='Técnico General'><label class='form-check-label' for='Técnico General'>Técnico General</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Técnico especializado' value='Técnico especializado'><label class='form-check-label' for='Técnico especializado'>Técnico especializado</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Jefe de departamento' value='Jefe de departamento'><label class='form-check-label' for='Jefe de departamento'>Jefe de departamento</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Administrativo' value='Administrativo'><label class='form-check-label' for='Administrativo'>Administrativo</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Docente' value='Docente'><label class='form-check-label' for='Docente'>Docente</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Supervisor' value='Supervisor'><label class='form-check-label' for='Supervisor'>Supervisor</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Directivo/gerente' value='Directivo/gerente'><label class='form-check-label' for='Directivo/gerente'>Directivo/gerente</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Autoempleo' value='Autoempleo'><label class='form-check-label' for='Autoempleo'>Autoempleo</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios31' id='Otro' value='Otro'><label class='form-check-label' for='Otro'>Otro</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>14.- Relación del trabajo con su área de formación:</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='0' value='0'><label class='form-check-label' for='0'>0</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='0.2' value='0.2'><label class='form-check-label' for='0.2'>0.2</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='0.4' value='0.4'><label class='form-check-label' for='0.4'>0.4</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='0.6' value='0.6'><label class='form-check-label' for='0.6'>0.6</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='0.8' value='0.8'><label class='form-check-label' for='0.8'>0.8</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios32' id='1' value='1'><label class='form-check-label' for='1'>1</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>15.- Cómo califica su formación académica con respecto a su desempeño laboral</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios33' id='Muy buena' value='Muy buena'><label class='form-check-label' for='Muy buena'>Muy buena</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios33' id='Buena' value='Buena'><label class='form-check-label' for='Buena'>Buena</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios33' id='Regular' value='Regular'><label class='form-check-label' for='Regular'>Regular</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios33' id='Mala' value='Mala'><label class='form-check-label' for='Mala'>Mala</label> </div></fieldset>
+
+                          <fieldset class='form-group'><div class='row'><legend class='col-form-label col-sm-4 pt-0'>1.- ¿Estaría interesado en tomar cursos de actualización o capacitación en la UPPachuca?</legend><div class='col-sm-10'>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios34' id='No' value='No'><label class='form-check-label' for='No'>No</label> </div>
+                          <div class='form-check'><input class='form-check-input' type='radio' name='gridRadios34' id='Si' value='Si'><label class='form-check-label' for='Si'>Si</label> </div></fieldset>
+
+                          <div class="form-group"><label for= '2.- En caso afirmativo, especificar que cursos le interesarían'>2.- En caso afirmativo, especificar que cursos le interesarían</label><input type='text' class='form-control' id='2.- En caso afirmativo, especificar que cursos le interesarían' placeholder='2.- En caso afirmativo, especificar que cursos le interesarían'></div>
+                                                
+                          <button type="submit" class="btn btn-primary">Finalizar</button>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-2">
+      </div>
+    </div>
+  </div>
+
+  <footer class="container-fluid text-center">
+    <p>Por: The Güily's, Software 09</p>
+  </footer>
+
+
+</body>
+
+
+</html>
